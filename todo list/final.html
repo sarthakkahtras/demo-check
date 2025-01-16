@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TODO LIST</title>
+
+</head>
+<body>
+  <input type="text" placeholder="enter your today working">
+  <button onclick="todoList()">Add Todo</button>
+  <script>
+    function todoList(){
+      const valuep = document.querySelector("input").value
+
+      const divEl = document.createElement("div");
+      const spanEl = document.createElement("span").innerHTML = valuep;
+      const buttonEl = document.createElement("delete");
+
+      divEl.appendChild(spanEl);
+      divEl.appendChild(buttonEl);
+
+      document.querySelector("body").appendChild(divEl);
+
+
+    }  
+  
+  
+  </script>
+  
+</body>
+</html>
